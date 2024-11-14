@@ -8,3 +8,7 @@ After mapping the entities an sql db became an obvious choice.
 There are appearent relations between the different entities and future migration could be done very easly
 
 ![Tables](image.png)
+
+
+![Uploading image.png…]()
+
