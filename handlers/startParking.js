@@ -1,4 +1,4 @@
-const db = require('../db');
+const db = require('../database/db');
 
 const startParking = (req, res) => {
     const { email, city_id, area_id, calculation_id } = req.body;

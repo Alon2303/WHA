@@ -44,6 +44,8 @@ module.exports = function main (options, cb) {
   // Create the express app
   const app = express()
 
+  app.use(express.json())
+
 
   // Common middleware
   // app.use(/* ... */)
@@ -86,7 +88,7 @@ module.exports = function main (options, cb) {
 
     serverStarted = true
     const addr = server.address()
-    // initDb()
+    initDb()
     logger.info(`Started at ${opts.host || addr.host || 'localhost'}:${addr.port}`)
     ready(err, app, server)
   })

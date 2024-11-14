@@ -1,11 +1,14 @@
-const db = require('../db');
+const db = require('../database/db');
 
 const login = (req, res) => {
     const { email, car_plate } = req.body;
+    console.log(email, car_plate);
 
     const query = `
         SELECT * FROM users WHERE email = ? AND car_plate = ?
     `;
+
+    console.log(query);
 
     db.get(query, [email, car_plate], (err, row) => {
         if (err) {
