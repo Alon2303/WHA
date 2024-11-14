@@ -7,13 +7,13 @@ const initDb = () => {
     
         db.run("CREATE TABLE parkings (\
             parking_id INTEGER PRIMARY KEY AUTOINCREMENT, \
-             email TEXT NOT NULL UNIQUE, \
-             city_id INTEGER, \
-             area_id INTEGER, \
-             calculation_id INTEGER NOT NULL, \
-             active BOOL, \
-             start_time TEXT, \
-             end_time TEXT)");
+            email TEXT NOT NULL UNIQUE, \
+            city_id INTEGER, \
+            area_id INTEGER, \
+            calculation_id INTEGER NOT NULL, \
+            active BOOL, \
+            start_time TEXT, \
+            end_time TEXT)");
     
         db.run("CREATE TABLE cities (city_id INTEGER PRIMARY KEY AUTOINCREMENT, city TEXT NOT NULL UNIQUE)");
     
